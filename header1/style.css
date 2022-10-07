@@ -13,12 +13,28 @@ header{
     display: flex;
     min-width: 320px;
     justify-content: space-between;
+    box-shadow: inset;
 }
-.header-section-name{
+.logo-and-name{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+.name-page{
     font-size: 2.8rem;
     align-self: center;
     text-align: center;
-    
+}
+.logo-header{
+    display: none;
+    background-image: url("./icons/logo.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px;
+    align-self: center;
 }
 .menu-icon{
     background-image: url("./icons/menu.png");
@@ -43,6 +59,44 @@ header{
     align-self: center;
     cursor: pointer;
 }
-.header-nav{
-    font-size: 0;
+.header-section-nav{
+    display: none;
+    text-align: center;
+    align-self: center;
+}
+.header-nav-ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 1.8rem;
+}
+.li-option{
+    align-self: center;
+    padding: 5px;
+}
+.li-option a{
+    text-decoration: none;
+    color: black;
+}
+@media (min-width: 510px){
+    header{
+        justify-content: space-between;
+    }
+    .menu-icon{
+        display: none;
+    }
+    .user-icon{
+        display: none;
+    }
+    .header-section-name .name-page{
+        text-align: left;
+        margin: 0 10px;
+    }
+    .header-section-nav{
+        width: 50%;
+        display: block;
+    }
+    .logo-header{
+        display: block;
+    }
 }
