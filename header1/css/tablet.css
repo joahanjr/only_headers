@@ -1,0 +1,17 @@
+.menu-icon{
+    display: none;
+}
+.user-icon{
+    display: none;
+}
+.header-section-name{
+    width: 170px;
+}
+.header-section-name .name-page{
+    text-align: left;
+    margin: 0 20px;
+}
+.header-section-nav{
+    width: 80%;
+    font-size: 1.6rem;
+}
